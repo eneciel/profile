@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(source/GowunBatang-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(source/GowunBatang-Bold.ttf);
+}
+
+html, body {
+    font-family: 'Regular';
+    color: white;
+    padding: 0;
+    margin: 0;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    --primary: #AE46FF;
+    --text: #1E1E1E;
+    --text-weak: #727272;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--primary);
+    padding: 8em 0 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: 'Bold';
+    font-size: 2em;
+    margin: 12px 0;
+}
+
+h2 {
+    font-family: 'Bold';
+    font-size: 1.5em;
+    margin: 36px 0 12px;
+}
+
+h3 {
+    font-family: 'Bold';
+    font-size: 1.25em;
+    margin: 16px 0 8px;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+span {
+    background-color: var(--primary);
+    text-transform: uppercase;
+}
+
+select {
+    color: white;
+    height: 2em;
+    background: none;
+    border: none;
+}
+
+option {
+    color: black;
+    background: none;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+= = = = = = = = = = NAV STYLES = = = = = = = = = =
+    > styles that belongs to 'nav'.
+*/
+
+nav {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 2em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.nav_box {
+    display: flex;
+    align-items: center;
+}
+
+.nav_box h1 {
+    margin-right: 2em;
+}
+
+.nav_box h5 {
+    padding: 0 2em;
+}
+
+/* 
+= = = = = = = = = = COMMON STYLES = = = = = = = = = =
+    > styles for commonly used components.
+*/
+
+.row {
+    display: flex;
+}
+
+.section {
+    color: var(--text);
+    width: 90%;
+    background-color: white;
+    border-radius: 1em 1em 0 0;
+    padding: 4em 2em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileboxcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/* 
+= = = = = = = = = = HOME STYLES = = = = = = = = = =
+    > styles that belongs to 'Home'.
+*/
+

@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="assets/language.css" rel="stylesheet">
+        <link href="assets/profilebox.css" rel="stylesheet">
+
+        <title>NaCl</title>
+
+        <script>
+            const langResource = {
+                en : {
+                },
+                es : {
+                },
+                ptbr : {
+                },
+                fr : {
+                },
+                ko: {
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav_box">
+                <h1>NaCl</h1>
+                <label for="languageSelector"></label>
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ptbr">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+            <div class="nav_box">
+                <a><h5><span>Home</span></h5></a>
+                <a href="about.html"><h5>About</h5></a>
+                <a><h5>Interests</h5></a>
+                <a><h5>Languages</h5></a>
+                <a><h5>Works</h5></a>
+                <a><h5>Made with</h5></a>
+            </div>
+        </nav>
+        <main>
+            <div class="section" id="Home">
+                <div class="quotecontainer">
+                    <h1>“Your average wrong timezone oomf”</h1>
+                </div>
+                <div class="profileboxcontainer">
+                    <div class="profilebox">
+                        <div><img src="source/empty.png"><h2>NaCl</h2><img src="source/icon/alien-monster.svg"></div>
+                        <div><img src="source/profile/pfp.png"></div>
+                        <div>
+                            <h3 id="def_info"></h3>
+                            <div class="row">
+                                <h5 id="name"></h5>
+                                <div>
+                                    <p>NaCl</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="aliases"></h5>
+                                <div>
+                                    <p>Eneciel</p>
+                                    <p>En</p>
+                                    <p>엔에씨엘</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="languages"></h5>
+                                <div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-southkorea.svg">
+                                        <p id="lang_ko"></p>
+                                        <p id="lang_status_ntv"></p>
+                                    </div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-australia.svg">
+                                        <p id="lang_en"></p>
+                                        <p id="lang_status_flt"></p>
+                                    </div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-mexico.svg">
+                                        <p id="lang_es"></p>
+                                        <p id="lang_status_lrn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <script>
+            window.addEventListener('load', function(){
+                document.getElementById('languageSelector').value = 'en';
+                updatelanguage('en');
+
+                document.getElementById('languageSelector').addEventListener('change', function() {
+                    const selectedLang = this.value;
+                    updatelanguage(selectedLang);
+                });
+            });
+
+            function updatelanguage(lang) {
+                for (let key in langResource[lang]) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.textContent = langResource[lang] [key];
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

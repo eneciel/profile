@@ -1,0 +1,82 @@
+.profilebox {
+    width: 328px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.profilebox > div {
+    border-top: 2px solid var(--primary);
+    padding: 0 12px 8px;
+    margin: 0;
+}
+
+.profilebox h3 {
+    border-left: 2px solid var(--primary);
+    padding-left: 8px;
+}
+
+/* HEADER */
+
+.profilebox > div:nth-child(1) {
+    background-color: var(--primary);
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profilebox > div:nth-child(1) h2 {
+    color: white;
+    margin: 0;
+}
+
+.profilebox > div:nth-child(1) img {
+    width: 1.5em;
+    height: 1.5em;
+    padding: 2px;
+    margin: 0 8px;
+}
+
+.profilebox > div:nth-child(1) img:nth-child(3) {
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* PROFILE IMAGE */
+
+.profilebox > div:nth-child(2) {
+    width: 100%;
+    padding: 0;
+}
+
+.profilebox > div:nth-child(2) > img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* DEFAULT INFORMATION */
+
+.profilebox > div:nth-child(3) {
+    padding: 0 12px 8px;
+}
+
+.profilebox .row {
+    padding: 6px 0;
+    display: flex;
+    align-items: start;
+}
+
+.profilebox .row h5 {
+    width: 120px;
+    margin: 0;
+}
+
+.profilebox .row p {
+    margin: 0;
+}
+
+.profilebox .row > div {
+    margin-left: 8px;
+}

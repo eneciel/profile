@@ -1,0 +1,16 @@
+.asset_location {
+    display: flex;
+    align-items: center;
+}
+
+.asset_location img {
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.asset_location h5, .asset_location p {
+    padding: 0 4px;
+    margin: 0;
+}

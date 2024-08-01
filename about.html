@@ -1,0 +1,304 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="assets/language.css" rel="stylesheet">
+        <link href="assets/profilebox.css" rel="stylesheet">
+        <link href="assets/location.css" rel="stylesheet">
+
+        <title>NaCl</title>
+
+        <script>
+            const langResource = {
+                en : {
+                    def_info: "Default information",
+                    name: "Name",
+                    aliases: "Aliases",
+                    languages: "Languages",
+                    lang_status_ntv: "Native",
+                    lang_status_flt: "Fluent",
+                    lang_status_lrn: "Learning",
+                    lang_ko: "Korean",
+                    lang_en: "English",
+                    lang_es: "Spanish",
+                    lang_pt: "Portuguese",
+                    lang_fr: "French",
+                    pronouns: "Pronouns",
+                    pn_sheher: "She/Her",
+                    pn_hehim: "He/Him",
+                    pn_theythem: "They/Them",
+                    pn_any: "Any",
+                    physical: "Physical description",
+                    gender: "Gender identity",
+                    sexual: "Sexual Orientation",
+                    romantic: "Romantic Orientation",
+                    gd_nonbi: "Non-binary",
+                    sxl_pan: "Pansexuality",
+                    rmt_pan: "Panromantic",
+                    nationality: "Nationality",
+                    ntn_ko: "Republic of Korea",
+                    ntn_aus: "Australia",
+                    timezone: "Timezone",
+                    kst: "KST",
+                },
+                es : {
+                    def_info: 'Información general',
+                    name: "Nombre",
+                    aliases: "Alias",
+                    languages: "Idiomas",
+                    lang_status_ntv: "Nativa",
+                    lang_status_flt: "Fluido",
+                    lang_status_lrn: "Aprendido",
+                    lang_ko: "Coreano",
+                    lang_en: "Inglés",
+                    lang_es: "Español",
+                    lang_pt: "Portugués",
+                    lang_fr: "",
+                    pronouns: "Pronombres",
+                    pn_sheher: "Ella/-a",
+                    pn_hehim: "Él/-o",
+                    pn_theythem: "Elle/-e",
+                    pn_any: "Cualquier",
+                    physical: "Descripción fisica",
+                    gender: "Identidad de género",
+                    sexual: "Orientación sexual",
+                    romantic: "Orientación romántica",
+                    gd_nonbi: "Género no binario",
+                    sxl_pan: "Pansexualidad",
+                    rmt_pan: "Panromanticismo",
+                    nationality: "",
+                    ntn_ko: "",
+                    ntn_aus: "",
+                    timezone: "Zona horaria",
+                    kst: "",
+                },
+                ptbr : {
+                    def_info: 'Informações gerais',
+                    name: "Nome",
+                    aliases: "Apelidos",
+                    languages: "Idiomas",
+                    lang_status_ntv: "Nativa",
+                    lang_status_flt: "Fluente",
+                    lang_status_lrn: "",
+                    lang_ko: "",
+                    lang_en: "",
+                    lang_es: "Espanhol",
+                    lang_pt: "Português",
+                    lang_fr: "",
+                    pronouns: "Pronomes",
+                    pn_sheher: "ela/dela",
+                    pn_hehim: "ele/dele",
+                    pn_theythem: "elu/delu",
+                    pn_any: "Qualquer",
+                    physical: "Descrição física",
+                    gender: "Identidade de gênero",
+                    sexual: "Orientação sexual",
+                    romantic: "Orientação romântica",
+                    gd_nonbi: "Gênero não binário",
+                    sxl_pan: "Pansexualidade",
+                    rmt_pan: "Panromanticidade",
+                    nationality: "",
+                    ntn_ko: "",
+                    ntn_aus: "",
+                    timezone: "",
+                    kst: "",
+                },
+                fr : {
+                    def_info: 'Information générale',
+                    name: "Nom",
+                    aliases: "Alias",
+                    languages: "Langues",
+                    lang_status_ntv: "Maternelle",
+                    lang_status_flt: "Couramment",
+                    lang_status_lrn: "",
+                    lang_ko: "",
+                    lang_en: "",
+                    lang_es: "",
+                    lang_pt: "",
+                    lang_fr: "",
+                    pronouns: "Pronoms",
+                    pn_sheher: "",
+                    pn_hehim: "",
+                    pn_theythem: "il/iel",
+                    pn_any: "Any",
+                    physical: "Description physique",
+                    gender: "Identité de genre",
+                    sexual: "Orientation sexuelle",
+                    romantic: "Orientation romantique",
+                    gd_nonbi: "Non-binarité",
+                    sxl_pan: "Pansexualité",
+                    rmt_pan: "Panromantisme",
+                    timezone: "",
+                    kst: "",
+                },
+                ko: {
+                    def_info: '기본 정보',
+                    name: "이름",
+                    aliases: "별칭",
+                    languages: "언어",
+                    lang_status_ntv: "모국어",
+                    lang_status_flt: "유창함",
+                    lang_status_lrn: "배우는 중",
+                    lang_ko: "한국어",
+                    lang_en: "영어",
+                    lang_es: "스페인어",
+                    lang_pt: "포르투갈어",
+                    lang_fr: "프랑스어",
+                    pronouns: "대명사",
+                    pn_sheher: "She/Her",
+                    pn_hehim: "He/Him",
+                    pn_theythem: "They/Them",
+                    pn_any: "자유",
+                    physical: "신체적 정보",
+                    gender: "성 정체성",
+                    sexual: "성적 지향",
+                    romantic: "로맨틱 지향",
+                    gd_nonbi: "논바이너리",
+                    sxl_pan: "범성애",
+                    rmt_pan: "범로맨틱",
+                    nationality: "국적",
+                    ntn_ko: "대한민국",
+                    ntn_aus: "호주",
+                    timezone: "시간대",
+                    kst: "한국표준시",
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav_box">
+                <h1>NaCl</h1>
+                <label for="languageSelector"></label>
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ptbr">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </div>
+            <div class="nav_box">
+                <a href="index.html"><h5>Home</h5></a>
+                <a><h5><span>About</span></h5></a>
+                <a><h5>Interests</h5></a>
+                <a><h5>Languages</h5></a>
+                <a><h5>Works</h5></a>
+                <a><h5>Made with</h5></a>
+            </div>
+        </nav>
+        <main>
+            <div class="section" id="Home">
+                <div class="quotecontainer">
+                    <h1>“Your average wrong timezone oomf”</h1>
+                </div>
+                <div class="profileboxcontainer">
+                    <div class="profilebox">
+                        <div><img src="source/empty.png"><h2>NaCl</h2><img src="source/icon/alien-monster.svg"></div>
+                        <div><img src="source/profile/pfp.png"></div>
+                        <div>
+                            <h3 id="def_info"></h3>
+                            <div class="row">
+                                <h5 id="name"></h5>
+                                <div>
+                                    <p>NaCl</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="aliases"></h5>
+                                <div>
+                                    <p>Eneciel</p>
+                                    <p>En</p>
+                                    <p>엔에씨엘</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="languages"></h5>
+                                <div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-southkorea.svg">
+                                        <p id="lang_ko"></p>
+                                        <p id="lang_status_ntv"></p>
+                                    </div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-australia.svg">
+                                        <p id="lang_en"></p>
+                                        <p id="lang_status_flt"></p>
+                                    </div>
+                                    <div class="asset_language">
+                                        <img src="source/flag/flag-mexico.svg">
+                                        <p id="lang_es"></p>
+                                        <p id="lang_status_lrn"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="pronouns"></h5>
+                                <div>
+                                    <p id="pn_theythem"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="physical"></h3>
+                            <div class="row">
+                                <h5 id="gender"></h5>
+                                <div>
+                                    <p id="gd_nonbi"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="sexual"></h5>
+                                <div>
+                                    <p id="sxl_pan"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="romantic"></h5>
+                                <div>
+                                    <p id="rmt_pan"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="nationality"></h5>
+                                <div>
+                                    <div class="asset_location">
+                                        <img src="source/flag/flag-southkorea.svg">
+                                        <p id="ntn_ko"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="timezone"></h5>
+                                <div>
+                                    <p id="kst"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <script>
+            window.addEventListener('load', function(){
+                document.getElementById('languageSelector').value = 'en';
+                updatelanguage('en');
+
+                document.getElementById('languageSelector').addEventListener('change', function() {
+                    const selectedLang = this.value;
+                    updatelanguage(selectedLang);
+                });
+            });
+
+            function updatelanguage(lang) {
+                for (let key in langResource[lang]) {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.textContent = langResource[lang] [key];
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
