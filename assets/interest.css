@@ -1,0 +1,57 @@
+.asset_interest {
+    min-height: 8em;
+    border: 1px solid var(--primary);
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.asset_interest > div {
+    min-height: 8em;
+    border-left: 1px solid var(--primary);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.asset_interest img {
+    width: 2em;
+    height: 2em;
+}
+
+.asset_interest h4, .asset_interest h5, .asset_interest p {
+    padding: 0;
+    margin: 0;
+}
+
+/* WHO */
+
+.asset_interest > div:nth-child(1) {
+    min-width: 120px;
+    height: 8em;
+    border: none;
+}
+
+/* SINCE */
+
+.asset_interest > div:nth-child(2) {
+    min-width: 120px;
+    padding: 0 1em;
+}
+
+/* NOTE */
+
+.asset_interest > div:nth-child(3) {
+    flex-grow: 1;
+    align-items: start;
+}
+
+.asset_interest > div:nth-child(3) p {
+    list-style: circle;
+}
+
+.asset_interest ul {
+    margin: 0;
+}

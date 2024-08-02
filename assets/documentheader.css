@@ -1,0 +1,16 @@
+.documentheader {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.documentheader h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.documentheader p {
+    padding: 6px 0;
+    margin: 0;
+}

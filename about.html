@@ -4,14 +4,21 @@
         <link href="assets/language.css" rel="stylesheet">
         <link href="assets/profilebox.css" rel="stylesheet">
         <link href="assets/location.css" rel="stylesheet">
+        <link href="assets/quotecontainer.css" rel="stylesheet">
+        <link href="assets/documentheader.css" rel="stylesheet">
+        <link href="assets/interest.css" rel="stylesheet">
+
+        <link href="mobile.css" rel="stylesheet" media="(orientation: portrait)">
 
         <title>NaCl</title>
 
         <script>
             const langResource = {
                 en : {
+                    nacl: "NaCl",
                     def_info: "Default information",
                     name: "Name",
+                    age: "Age",
                     aliases: "Aliases",
                     languages: "Languages",
                     lang_status_ntv: "Native",
@@ -39,10 +46,15 @@
                     ntn_aus: "Australia",
                     timezone: "Timezone",
                     kst: "KST",
+                    doc_01_001: "NaCl, or Eneciel is a Korean fan of Quackity, and is currently active as an artist and a translator. They are in various teams as a translator or subtitler, posting art on Twitter, and making Animatics or Korean subtitle videos on their YouTube channel.",
+                    h2_02: "Interests",
+                    int_q_01: "The biggest interest",
                 },
                 es : {
+                    nacl: "NaCl",
                     def_info: 'Información general',
                     name: "Nombre",
+                    age: "Edad",
                     aliases: "Alias",
                     languages: "Idiomas",
                     lang_status_ntv: "Nativa",
@@ -70,10 +82,13 @@
                     ntn_aus: "",
                     timezone: "Zona horaria",
                     kst: "",
+                    doc_01_001: "TBA",
                 },
                 ptbr : {
+                    nacl: "NaCl",
                     def_info: 'Informações gerais',
                     name: "Nome",
+                    age: "Edade",
                     aliases: "Apelidos",
                     languages: "Idiomas",
                     lang_status_ntv: "Nativa",
@@ -101,10 +116,13 @@
                     ntn_aus: "",
                     timezone: "",
                     kst: "",
+                    doc_01_001: "TBA",
                 },
                 fr : {
+                    nacl: "NaCl",
                     def_info: 'Information générale',
                     name: "Nom",
+                    age: "Age",
                     aliases: "Alias",
                     languages: "Langues",
                     lang_status_ntv: "Maternelle",
@@ -129,10 +147,13 @@
                     rmt_pan: "Panromantisme",
                     timezone: "",
                     kst: "",
+                    doc_01_001: "TBA",
                 },
                 ko: {
+                    nacl: "NaCl",
                     def_info: '기본 정보',
                     name: "이름",
+                    age: "나이",
                     aliases: "별칭",
                     languages: "언어",
                     lang_status_ntv: "모국어",
@@ -160,6 +181,8 @@
                     ntn_aus: "호주",
                     timezone: "시간대",
                     kst: "한국표준시",
+                    doc_01_001: "NaCl 혹은 엔에씨엘은 콰키티의 한국인 팬 중 하나로, 그림러이자 번역러로 활동 중에 있다. 다양한 팀에 번역가 혹은 자막 작업자로 참여하고 있으며, 트위터에는 그림을, 유튜브에는 애니메틱이나 한국어 자막 영상을 업로드한다.",
+                    h2_02: "관심사",
                 }
             }
         </script>
@@ -188,8 +211,14 @@
         </nav>
         <main>
             <div class="section" id="Home">
+                <div class="documentheader">
+                    <h1>About</h1>
+                    <p>Last update: 2024.08.03</p>
+                </div>
                 <div class="quotecontainer">
-                    <h1>“Your average wrong timezone oomf”</h1>
+                    <h1>“</h1>
+                    <h3>Your average wrong timezone oomf</h3>
+                    <h1>”</h1>
                 </div>
                 <div class="profileboxcontainer">
                     <div class="profilebox">
@@ -201,6 +230,12 @@
                                 <h5 id="name"></h5>
                                 <div>
                                     <p>NaCl</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5 id="age"></h5>
+                                <div>
+                                    <p>17</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -276,7 +311,26 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="document">
+                    <p id="doc_01_001"></p>
+                    <h2 id="h2_02"></h2>
+                    <div class="asset_interest">
+                        <div>
+                            <img src="source/icon/duck.svg">
+                            <h4>Quackity</h4>
+                        </div>
+                        <div>
+                            <h5>Since:</h5>
+                            <p>2021. 02. 08</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><b><p id="int_q_01"></p></b></li>
+                                <li><p id="int_q_02"></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 

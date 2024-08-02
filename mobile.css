@@ -1,0 +1,31 @@
+.profileboxcontainer {
+    width: auto;
+    position: static;
+    padding: 0;
+    margin: 0;
+}
+
+.profilebox {
+    margin: 0;
+}
+
+.document {
+    width: 100%;
+}
+
+.asset_interest > div:nth-child(1) {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.asset_interest > div:nth-child(2) {
+    width: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.asset_interest > div:nth-child(3) {
+    width: 100%;
+    border-top: 1px solid var(--primary);
+    border-left: none;
+}

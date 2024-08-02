@@ -1,0 +1,21 @@
+.quotecontainer {
+    min-width: 328px;
+    max-width: 36vw;
+    box-sizing: border-box;
+    padding: 0 2em;
+    margin: 12px 0;
+}
+
+.quotecontainer h1 {
+    width: 100%;
+    margin: 0;
+}
+
+.quotecontainer h1:nth-child(3) {
+    text-align: end;
+}
+
+.quotecontainer h3 {
+    padding: 0 4vw;
+    margin: 0;
+}
