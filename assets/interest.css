@@ -1,6 +1,4 @@
 .asset_interest {
-    min-height: 8em;
-    border: 1px solid var(--primary);
     margin: 1em 0;
     display: flex;
     align-items: center;
@@ -8,8 +6,6 @@
 }
 
 .asset_interest > div {
-    min-height: 8em;
-    border-left: 1px solid var(--primary);
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -29,21 +25,19 @@
 /* WHO */
 
 .asset_interest > div:nth-child(1) {
-    min-width: 120px;
-    height: 8em;
-    border: none;
+    padding: 1em;
 }
 
 /* SINCE */
 
 .asset_interest > div:nth-child(2) {
-    min-width: 120px;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 /* NOTE */
 
 .asset_interest > div:nth-child(3) {
+    padding: 1em 0;
     flex-grow: 1;
     align-items: start;
 }

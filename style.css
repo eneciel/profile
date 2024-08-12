@@ -106,6 +106,7 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 5;
 }
 
 .nav_box {
